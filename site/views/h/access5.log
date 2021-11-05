@@ -1,0 +1,320 @@
+Joomla\CMS\Input\Input::__set_state(array(
+   'inputs' => 
+  array (
+    'cookie' => 
+    Joomla\CMS\Input\Cookie::__set_state(array(
+       'inputs' => 
+      array (
+      ),
+       'options' => 
+      array (
+      ),
+       'filter' => 
+      Joomla\CMS\Filter\InputFilter::__set_state(array(
+         'stripUSC' => 0,
+         'tagsArray' => 
+        array (
+        ),
+         'attrArray' => 
+        array (
+        ),
+         'tagsMethod' => 0,
+         'attrMethod' => 0,
+         'xssAuto' => 1,
+         'tagBlacklist' => 
+        array (
+          0 => 'applet',
+          1 => 'body',
+          2 => 'bgsound',
+          3 => 'base',
+          4 => 'basefont',
+          5 => 'canvas',
+          6 => 'embed',
+          7 => 'frame',
+          8 => 'frameset',
+          9 => 'head',
+          10 => 'html',
+          11 => 'id',
+          12 => 'iframe',
+          13 => 'ilayer',
+          14 => 'layer',
+          15 => 'link',
+          16 => 'meta',
+          17 => 'name',
+          18 => 'object',
+          19 => 'script',
+          20 => 'style',
+          21 => 'title',
+          22 => 'xml',
+        ),
+         'attrBlacklist' => 
+        array (
+          0 => 'action',
+          1 => 'background',
+          2 => 'codebase',
+          3 => 'dynsrc',
+          4 => 'formaction',
+          5 => 'lowsrc',
+        ),
+         'blacklistedChars' => 
+        array (
+          0 => '&tab;',
+          1 => '&space;',
+          2 => '&colon;',
+          3 => '&column;',
+        ),
+      )),
+       'data' => 
+      array (
+        'adminForm_l_l_storageownertext' => '',
+        'adminForm_l_l_storageowner0jpg' => '',
+        'adminForm_l_foto1jpg' => '',
+        'adminForm_l_foto1text' => '',
+        'adminForm_l_foto10jpg' => '',
+        'adminForm_l_kuehlungendtext' => '',
+        'adminForm_l_kuehlungend0jpg' => '',
+        'adminForm_bierprobeitem_id' => '1',
+        'adminForm_l_bierprobe1brauerstext' => '',
+        'adminForm_l_bierprobe1text' => '',
+        'adminForm_l_bierprobe10jpg' => '',
+        'adminForm_return' => '',
+        'adminForm_task' => '',
+        'adminForm_a23c04cca9ebca95e9c46b8d443924ff' => '1',
+        'adminForm_co2' => '5',
+        'adminForm_temp' => '20',
+        'adminForm_density' => 'brix2plato',
+        'adminForm_density_input' => '20',
+        'adminForm_height' => '40',
+        'adminForm_diameter' => '34',
+        'adminForm_calib_temp' => '20',
+        'adminForm_wort' => '12',
+        'adminForm_unit_wort' => 'Plato',
+        'adminForm_rem_wort' => '2,5',
+        'adminForm_unit_rest' => 'Plato',
+        'f_pressure_co2' => '5',
+        'f_pressure_temp' => '7',
+        'f_density_density' => 'brix2plato',
+        'f_density_density_input' => '20',
+        'f_potvolume_height' => '40',
+        'f_potvolume_diameter' => '34',
+        'f_potvolume_calib_temp' => '20',
+        'f_potvolume_wort' => '12',
+        'f_potvolume_temp' => '20',
+        'f_potvolume_unit_wort' => 'Plato',
+        'f_potvolume_rem_wort' => '2,5',
+        'f_potvolume_unit_rest' => 'Plato',
+        'f_correct_wort_calib_temp' => '20',
+        'f_correct_wort_wort' => '12',
+        'f_correct_wort_temp' => '20',
+        'f_alcohol_wort' => '12',
+        'f_alcohol_unit_wort' => 'Plato',
+        'f_alcohol_rem_wort' => '2,5',
+        'f_alcohol_unit_rest' => 'Plato',
+        'crisp-client%2Fsession%2Fbbc00243-35b3-4e08-8848-5ffa451fcdce' => 'session_5c6a8800-7b31-47dc-ab77-4349b461a523',
+        '_ga' => 'GA1.1.33925006.1612787997',
+        'joomla_remember_me_da83110c66a3e76b4ae5da060e326b99' => 'pmg0FZuiCpN2PW3f.IbbihGe5f9QlXM8euHEG',
+      ),
+    )),
+    'post' => 
+    Joomla\CMS\Input\Input::__set_state(array(
+       'inputs' => 
+      array (
+      ),
+       'options' => 
+      array (
+      ),
+       'filter' => 
+      Joomla\Filter\InputFilter::__set_state(array(
+         'tagsArray' => 
+        array (
+        ),
+         'attrArray' => 
+        array (
+        ),
+         'tagsMethod' => 0,
+         'attrMethod' => 0,
+         'xssAuto' => 1,
+         'tagBlacklist' => 
+        array (
+          0 => 'applet',
+          1 => 'body',
+          2 => 'bgsound',
+          3 => 'base',
+          4 => 'basefont',
+          5 => 'canvas',
+          6 => 'embed',
+          7 => 'frame',
+          8 => 'frameset',
+          9 => 'head',
+          10 => 'html',
+          11 => 'id',
+          12 => 'iframe',
+          13 => 'ilayer',
+          14 => 'layer',
+          15 => 'link',
+          16 => 'meta',
+          17 => 'name',
+          18 => 'object',
+          19 => 'script',
+          20 => 'style',
+          21 => 'title',
+          22 => 'xml',
+        ),
+         'attrBlacklist' => 
+        array (
+          0 => 'action',
+          1 => 'background',
+          2 => 'codebase',
+          3 => 'dynsrc',
+          4 => 'formaction',
+          5 => 'lowsrc',
+        ),
+         'blacklistedChars' => 
+        array (
+          0 => '&tab;',
+          1 => '&space;',
+          2 => '&colon;',
+          3 => '&column;',
+        ),
+      )),
+       'data' => 
+      array (
+      ),
+    )),
+    'files' => 
+    Joomla\CMS\Input\Files::__set_state(array(
+       'decodedData' => 
+      array (
+      ),
+       'inputs' => 
+      array (
+      ),
+       'options' => 
+      array (
+      ),
+       'filter' => 
+      Joomla\CMS\Filter\InputFilter::__set_state(array(
+         'stripUSC' => 0,
+         'tagsArray' => 
+        array (
+        ),
+         'attrArray' => 
+        array (
+        ),
+         'tagsMethod' => 0,
+         'attrMethod' => 0,
+         'xssAuto' => 1,
+         'tagBlacklist' => 
+        array (
+          0 => 'applet',
+          1 => 'body',
+          2 => 'bgsound',
+          3 => 'base',
+          4 => 'basefont',
+          5 => 'canvas',
+          6 => 'embed',
+          7 => 'frame',
+          8 => 'frameset',
+          9 => 'head',
+          10 => 'html',
+          11 => 'id',
+          12 => 'iframe',
+          13 => 'ilayer',
+          14 => 'layer',
+          15 => 'link',
+          16 => 'meta',
+          17 => 'name',
+          18 => 'object',
+          19 => 'script',
+          20 => 'style',
+          21 => 'title',
+          22 => 'xml',
+        ),
+         'attrBlacklist' => 
+        array (
+          0 => 'action',
+          1 => 'background',
+          2 => 'codebase',
+          3 => 'dynsrc',
+          4 => 'formaction',
+          5 => 'lowsrc',
+        ),
+         'blacklistedChars' => 
+        array (
+          0 => '&tab;',
+          1 => '&space;',
+          2 => '&colon;',
+          3 => '&column;',
+        ),
+      )),
+       'data' => 
+      array (
+      ),
+    )),
+  ),
+   'options' => 
+  array (
+  ),
+   'filter' => 
+  Joomla\Filter\InputFilter::__set_state(array(
+     'tagsArray' => 
+    array (
+    ),
+     'attrArray' => 
+    array (
+    ),
+     'tagsMethod' => 0,
+     'attrMethod' => 0,
+     'xssAuto' => 1,
+     'tagBlacklist' => 
+    array (
+      0 => 'applet',
+      1 => 'body',
+      2 => 'bgsound',
+      3 => 'base',
+      4 => 'basefont',
+      5 => 'canvas',
+      6 => 'embed',
+      7 => 'frame',
+      8 => 'frameset',
+      9 => 'head',
+      10 => 'html',
+      11 => 'id',
+      12 => 'iframe',
+      13 => 'ilayer',
+      14 => 'layer',
+      15 => 'link',
+      16 => 'meta',
+      17 => 'name',
+      18 => 'object',
+      19 => 'script',
+      20 => 'style',
+      21 => 'title',
+      22 => 'xml',
+    ),
+     'attrBlacklist' => 
+    array (
+      0 => 'action',
+      1 => 'background',
+      2 => 'codebase',
+      3 => 'dynsrc',
+      4 => 'formaction',
+      5 => 'lowsrc',
+    ),
+     'blacklistedChars' => 
+    array (
+      0 => '&tab;',
+      1 => '&space;',
+      2 => '&colon;',
+      3 => '&column;',
+    ),
+  )),
+   'data' => 
+  array (
+    'option' => 'com_hiots',
+    'view' => 'h',
+    'lang' => 'de',
+    'language' => 'de-DE',
+    'Itemid' => NULL,
+  ),
+))

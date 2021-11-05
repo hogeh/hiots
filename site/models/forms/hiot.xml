@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset
+		addfieldpath="/administrator/components/com_categories/models/fields"
+		>
+		<field
+			name="id"
+			type="text"
+			default="0"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			readonly="true"
+			class="readonly"
+			description="JGLOBAL_FIELD_ID_DESC"
+		/>
+		<field
+			name="title"
+			type="text"
+			class="input-xxlarge input-large-text"
+			size="40" label="COM_HIOTS_DEVICETITLE"
+			description="COM_HIOTS_FIELD_TITLE_DESC"
+			required="true"
+		/>
+		<field
+			name="alias"
+			type="text"
+			size="40"
+			label="JFIELD_ALIAS_LABEL"
+			description="COM_HIOTS_FIELD_ALIAS_DESC"
+			hint="JFIELD_ALIAS_PLACEHOLDER"
+		/>
+		<field
+			name="iot_type"
+			type="list"
+			label="COM_HIOTS_DEVICETYPE"
+			default="0"
+		>
+			<option value="0">COM_HIOTS_ISPINDEL</option>
+			<option value="1">COM_HIOTS_MESHCONTROLLER</option>
+			<option value="2">COM_HIOTS_HEATING</option>
+			<option value="3">COM_HIOTS_COOLING</option>
+		</field>
+		<field
+			name="token"
+			type="text"
+			size="6" 
+			label="COM_HIOTS_TOKEN"
+			description=""
+		/>
+		<field 
+			name="catid" 
+			type="category" 
+			extension="com_hiots" 
+			label="JCATEGORY"
+			description="" />		
+		<field
+			name="description"
+			type="editor"
+			buttons="true"
+			hide="pagebreak,readmore"
+			filter="JComponentHelper::filterText"
+			label="JGLOBAL_DESCRIPTION"
+			description=""
+		/>
+		<field
+			name="hits"
+			type="text"
+			class="readonly"
+			size="6" label="JGLOBAL_HITS"
+			description="COM_HIOTS_HITS_DESC"
+			readonly="true"
+			filter="unset"
+		/>
+		<field
+			name="state"
+			type="list"
+			label="JSTATUS"
+			description="COM_HIOTS_FIELD_STATE_DESC"
+			class="chzn-color-state"
+			size="1"
+			default="1"
+		>
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-3">COM_HIOTS_FIELD_VALUE_REPORTED</option>
+			<option value="-2">JTRASHED</option>
+		</field>
+		<field
+			name="ordering"
+			type="ordering"
+			label="JFIELD_ORDERING_LABEL"
+			description="JFIELD_ORDERING_DESC"
+			content_type="com_hiots.hiot"
+		/>
+
+		<field
+			name="access"
+			type="accesslevel"
+			label="JFIELD_ACCESS_LABEL"
+			description="JFIELD_ACCESS_DESC"
+			size="1"
+		/>
+
+		<field
+			name="language"
+			type="hidden"
+			default="*"
+		>
+			<option value="*">JALL</option>
+		</field>
+
+		<field
+			name="tags"
+			type="tag"
+			label="JTAG"
+			description="JTAG_DESC"
+			multiple="true"
+		/>
+
+		<field
+			name="version_note"
+			type="text"
+			label="JGLOBAL_FIELD_VERSION_NOTE_LABEL"
+			description="JGLOBAL_FIELD_VERSION_NOTE_DESC"
+			size="45"
+			labelclass="control-label"
+		/>
+
+		<field
+			name="created"
+			type="calendar"
+			label="JGLOBAL_FIELD_CREATED_LABEL"
+			description="JGLOBAL_FIELD_CREATED_DESC"
+			size="22"
+			format="%Y-%m-%d %H:%M:%S"
+			filter="user_utc"
+		/>
+
+		<field
+			name="created_by"
+			type="user"
+			label="JGLOBAL_FIELD_CREATED_BY_LABEL"
+			description="JGLOBAL_FIELD_CREATED_BY_Desc"
+		/>
+
+		<field
+			name="created_by_alias"
+			type="text"
+			label="JGLOBAL_FIELD_CREATED_BY_ALIAS_LABEL"
+			description="JGLOBAL_FIELD_CREATED_BY_ALIAS_DESC"
+			size="20" />
+
+		<field
+			name="modified"
+			type="calendar"
+			class="readonly"
+			label="JGLOBAL_FIELD_MODIFIED_LABEL"
+			description="COM_HIOTS_FIELD_MODIFIED_DESC"
+			size="22"
+			readonly="true"
+			format="%Y-%m-%d %H:%M:%S"
+			filter="user_utc"
+		/>
+
+		<field
+			name="modified_by"
+			type="user"
+			label="JGLOBAL_FIELD_MODIFIED_BY_LABEL"
+			class="readonly"
+			readonly="true"
+			filter="unset"
+		/>
+
+		<field
+			name="checked_out"
+			type="hidden"
+			filter="unset"
+		/>
+
+		<field
+			name="checked_out_time"
+			type="hidden"
+			filter="unset"
+		/>
+
+		<field
+			name="publish_up"
+			type="calendar"
+			label="JGLOBAL_FIELD_PUBLISH_UP_LABEL"
+			description="JGLOBAL_FIELD_PUBLISH_UP_DESC"
+			format="%Y-%m-%d %H:%M:%S"
+			size="22"
+			filter="user_utc"
+		/>
+
+		<field
+			name="publish_down"
+			type="calendar"
+			label="JGLOBAL_FIELD_PUBLISH_DOWN_LABEL"
+			description="JGLOBAL_FIELD_PUBLISH_DOWN_DESC"
+			format="%Y-%m-%d %H:%M:%S"
+			size="22"
+			filter="user_utc"
+		/>
+
+		<field
+			name="version"
+			type="text"
+			class="readonly"
+			label="COM_HIOTS_FIELD_VERSION_LABEL"
+			size="6"
+			description="COM_HIOTS_FIELD_VERSION_DESC"
+			readonly="true"
+			filter="unset"
+		/>
+
+		<field
+			name="metakey"
+			type="textarea"
+			label="JFIELD_META_KEYWORDS_LABEL"
+			description="JFIELD_META_KEYWORDS_DESC"
+			rows="3"
+			cols="30"
+		/>
+
+		<field
+			name="metadesc"
+			type="textarea"
+			label="JFIELD_META_DESCRIPTION_LABEL"
+			description="JFIELD_META_DESCRIPTION_DESC"
+			rows="3"
+			cols="30"
+		/>
+
+		<field
+			name="xreference"
+			type="text"
+			label="JFIELD_XREFERENCE_LABEL"
+			description="JFIELD_XREFERENCE_DESC"
+			size="20"
+		/>
+	</fieldset>
+	<fields
+		name="params"
+		label="COM_HIOTS_PARAMETERS"
+		>
+		<fieldset
+			name="settings"
+			label="COM_HIOTS_GENERAL_SETTINGS"
+			>
+			<field
+				name="storemode"
+				type="list"
+				label="COM_HIOTS_STOREMODE"
+				description=""
+				size="1"
+				default="1"
+			>
+				<option value="0">COM_HIOTS_NOSTORE</option>
+				<option value="1">COM_HIOTS_EACHRECKORD</option>
+				<option value="60">COM_HIOTS_EVERYMINUTE</option>
+				<option value="300">COM_HIOTS_EVERYFIVEMINUTE</option>
+				<option value="600">COM_HIOTS_EVERYTENMINUTE</option>
+				<option value="3600">COM_HIOTS_EVERYHOUR</option>
+				<option value="-1">COM_HIOTS_1TENDEGREE</option>
+				<option value="-2">0.2</option>
+				<option value="-3">0.3</option>
+				<option value="-5">0.5</option>
+				<option value="-10">1</option>
+			</field>
+			<field type="spacer" name="myspacer" class="text"
+				label="COM_HIOTS_READONLY"
+			/>			
+			<field
+				name="status_message"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_STATUSMESSAGE"
+				readonly="true"
+				class="readonly"	
+			/>
+		</fieldset>
+		<fieldset
+			name="type0"
+			label="COM_HIOTS_SPINDELSETTINGS"
+			>
+			<field
+				name="mode"
+				type="hidden"
+				default="-1"
+			/>
+			<field
+				name="current_session_id"
+				type="sql"
+				multiple="false"
+				description=""
+				query="select id, concat(session_date,title) as title from #__hbrewsessions WHERE state=1 Order by session_date desc"
+				key_field="id"
+				value_field="title"
+				required="true"
+				translate="true"
+				label="COM_HIOTS_CURRENT_SESSION"
+			>  <option value="0">Nicht in Gebrauch</option>
+			</field>
+			<field
+				name="ID"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_ID"
+				readonly="true"
+				class="readonly"	
+			/>
+			<field
+				name="a"
+				type="text"
+				size="20" 
+				label="A"
+			/>
+			<field
+				name="b"
+				type="text"
+				size="20" 
+				label="B"
+			/>
+			<field
+				name="c"
+				type="text"
+				size="20" 
+				label="C"
+			/>
+			<field type="spacer" name="myspacer" class="text"
+				label="COM_HIOTS_READONLY"
+			/>			
+			<field
+				name="interval"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_INTERVAL"
+				readonly="true"
+				class="readonly"	
+			/>
+			<field
+				name="battery"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_BATTERY"
+				readonly="true"
+				class="readonly"	
+			/>
+			<field
+				name="RSSI"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_RSSI"
+				readonly="true"
+				class="readonly"	
+			/>
+			<field
+				name="angle"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_ANGLE"
+				readonly="true"
+				class="readonly"	
+			/>
+			<field
+				name="temperature"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_TEMPERATURE"
+				readonly="true"
+				class="readonly"	
+			/>
+			<field
+				name="temp_units"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_TEMPUNITS"
+				readonly="true"
+				class="readonly"	
+			/>
+			<field
+				name="gravity"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_GRAVITY"
+				readonly="true"
+				class="readonly"	
+			/>		</fieldset>
+		<fieldset
+			name="type1"
+			label="COM_HIOTS_MESCHCONTROLLER"
+			>
+			<field
+				name="current_session_id"
+				type="sql"
+				multiple="false"
+				description=""
+				query="select id, concat(session_date,title) as title from #__hbrewsessions WHERE state=1 Order by session_date desc"
+				key_field="id"
+				value_field="title"
+				required="true"
+				translate="true"
+				label="Akuelles Brauprotokoll"
+			>  <option value="0">Nicht in Gebrauch</option>
+			</field>
+			<field
+				name="setinterval"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_INTERVAL"
+				default="45"
+			/>
+			<field
+				name="mode"
+				type="list"
+				label="COM_HIOTS_MODE"
+				description=""
+				size="1"
+				default="0"
+			>
+				<option value="0">COM_HIOTS_ALWAYSOFF</option>
+				<option value="1">COM_HIOTS_ALWAYSON</option>
+				<option value="2">COM_HIOTS_AUTOMATIC</option>
+			</field>
+			<field type="spacer" name="myspacer" class="text"
+				label="COM_HIOTS_READONLY"
+			/>			
+						<field
+				name="interval"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_INTERVAL"
+				readonly="true"
+				class="readonly"	
+			/>
+			<field
+				name="temperature"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_TEMPERATURE"
+				readonly="true"
+				class="readonly"	
+			/>
+			<field
+				name="temp_units"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_TEMPUNITS"
+				readonly="true"
+				class="readonly"	
+			/>
+		</fieldset>
+		<fieldset
+			name="type2"
+			label="COM_HIOTS_HEATING"
+			>
+			<field
+				name="current_session_id"
+				type="hidden"
+				readonly="true"
+				class="readonly"	
+				default="0"
+			/>
+			<field
+				name="setinterval"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_INTERVAL"
+				default="45"
+			/>
+			<field
+				name="mode"
+				type="list"
+				label="COM_HIOTS_MODE"
+				description=""
+				size="1"
+				default="0"
+			>
+				<option value="0">COM_HIOTS_ALWAYSOFF</option>
+				<option value="1">COM_HIOTS_ALWAYSON</option>
+				<option value="2">COM_HIOTS_AUTOMATIC</option>
+			</field>
+			<field
+				name="threshold"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_TEMPTHRESHOLD"
+				default="20"
+			/>
+			<field
+				name="hysterese"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_HYSTERESE"
+				default="0.0"
+			/>
+			<field type="spacer" name="myspacer" class="text"
+				label="COM_HIOTS_READONLY"
+			/>			
+			<field
+				name="interval"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_INTERVAL"
+				readonly="true"
+				class="readonly"	
+			/>
+			<field
+				name="temperature"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_TEMPERATURE"
+				readonly="true"
+				class="readonly"	
+			/>
+			<field
+				name="temp_units"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_TEMPUNITS"
+				readonly="true"
+				class="readonly"	
+			/>
+		</fieldset>
+		<fieldset
+			name="type3"
+			label="COM_HIOTS_COOLING"
+			>
+			<field
+				name="current_session_id"
+				type="hidden"
+				default="0"
+			/>
+			<field
+				name="setinterval"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_INTERVAL"
+				default="45"
+			/>
+			<field
+				name="mode"
+				type="list"
+				label="COM_HIOTS_MODE"
+				description=""
+				size="1"
+				default="0"
+			>
+				<option value="0">COM_HIOTS_ALWAYSOFF</option>
+				<option value="1">COM_HIOTS_ALWAYSON</option>
+				<option value="2">COM_HIOTS_AUTOMATIC</option>
+			</field>
+			<field
+				name="threshold"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_TEMPTHRESHOLD"
+				default="20"
+			/>
+			<field
+				name="hysterese"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_HYSTERESE"
+				default="0.0"
+			/>
+			<field type="spacer" name="myspacer" class="text"
+				label="COM_HIOTS_READONLY"
+			/>			
+			<field
+				name="interval"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_INTERVAL"
+				readonly="true"
+				class="readonly"	
+			/>
+			<field
+				name="temperature"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_TEMPERATURE"
+				readonly="true"
+				class="readonly"	
+			/>
+			<field
+				name="temp_units"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_TEMPUNITS"
+				readonly="true"
+				class="readonly"	
+			/>
+		</fieldset>
+		<fieldset
+			name="type4"
+			label="COM_HIOTS_HUMIDITYCONTROLLER"
+			>
+			<field
+				name="setinterval"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_INTERVAL"
+				default="45"
+			/>
+			<field type="spacer" name="myspacer" class="text"
+				label="COM_HIOTS_READONLY"
+			/>			
+			<field
+				name="interval"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_INTERVAL"
+				readonly="true"
+				class="readonly"	
+			/>
+			<field
+				name="temperature"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_TEMPERATURE"
+				readonly="true"
+				class="readonly"	
+			/>
+			<field
+				name="temp_units"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_TEMPUNITS"
+				readonly="true"
+				class="readonly"	
+			/>
+			<field
+				name="humidity"
+				type="text"
+				size="20" 
+				label="COM_HIOTS_HUMIDITY"
+				readonly="true"
+				class="readonly"	
+			/>
+		</fieldset>
+	</fields>
+	<fields
+		name="images"
+		>
+		<fieldset
+			name="images"
+			label="JGLOBAL_FIELDSET_IMAGE_OPTIONS"
+			>
+
+			<field
+				name="image_first"
+				type="media"
+				label="COM_HIOTS_FIELD_FIRST_LABEL"
+				description="COM_HIOTS_FIELD_FIRST_DESC"
+			/>
+
+			<field
+				name="float_first"
+				type="list"
+				label="COM_HIOTS_FLOAT_LABEL"
+				description="COM_HIOTS_FLOAT_DESC"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="right">COM_HIOTS_RIGHT</option>
+				<option value="left">COM_HIOTS_LEFT</option>
+				<option value="none">COM_HIOTS_NONE</option>
+			</field>
+
+			<field
+				name="image_first_alt"
+				type="text"
+				label="COM_HIOTS_FIELD_IMAGE_ALT_LABEL"
+				description="COM_HIOTS_FIELD_IMAGE_ALT_DESC"
+				size="20"
+			/>
+
+			<field
+				name="image_first_caption"
+				type="text"
+				label="COM_HIOTS_FIELD_IMAGE_CAPTION_LABEL"
+				description="COM_HIOTS_FIELD_IMAGE_CAPTION_DESC"
+				size="20"
+			/>
+
+			<field
+				name="spacer1"
+				type="spacer"
+				hr="true"
+			/>
+
+			<field
+				name="image_second"
+				type="media"
+				label="COM_HIOTS_FIELD_SECOND_LABEL"
+				description="COM_HIOTS_FIELD_SECOND_DESC"
+			/>
+
+			<field
+				name="float_second"
+				type="list"
+				label="COM_HIOTS_FLOAT_LABEL"
+				description="COM_HIOTS_FLOAT_DESC">
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="right">COM_HIOTS_RIGHT</option>
+					<option value="left">COM_HIOTS_LEFT</option>
+					<option value="none">COM_HIOTS_NONE</option>
+			</field>
+
+			<field
+				name="image_second_alt"
+				type="text"
+				label="COM_HIOTS_FIELD_IMAGE_ALT_LABEL"
+				description="COM_HIOTS_FIELD_IMAGE_ALT_DESC"
+				size="20"
+			/>
+
+			<field
+				name="image_second_caption"
+				type="text"
+				label="COM_HIOTS_FIELD_IMAGE_CAPTION_LABEL"
+				description="COM_HIOTS_FIELD_IMAGE_CAPTION_DESC"
+				size="20"
+			/>
+		</fieldset>
+	</fields>
+
+	<fields
+		name="metadata"
+		label="JGLOBAL_FIELDSET_METADATA_OPTIONS"
+		>
+		<fieldset
+			name="jmetadata"
+			label="JGLOBAL_FIELDSET_METADATA_OPTIONS"
+			>
+
+			<field
+				name="robots"
+				type="list"
+				label="JFIELD_METADATA_ROBOTS_LABEL"
+				description="JFIELD_METADATA_ROBOTS_DESC"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="index, follow">JGLOBAL_INDEX_FOLLOW</option>
+				<option value="noindex, follow">JGLOBAL_NOINDEX_FOLLOW</option>
+				<option value="index, nofollow">JGLOBAL_INDEX_NOFOLLOW</option>
+				<option value="noindex, nofollow">JGLOBAL_NOINDEX_NOFOLLOW</option>
+			</field>
+
+			<field
+				name="rights"
+				type="text"
+				label="JFIELD_META_RIGHTS_LABEL"
+				description="JFIELD_META_RIGHTS_DESC"
+				required="false"
+				filter="string"
+				cols="30"
+				rows="2"
+			/>
+		</fieldset>
+	</fields>
+</form>

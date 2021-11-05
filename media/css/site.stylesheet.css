@@ -1,0 +1,344 @@
+﻿#itembased 
+{height: 100%;
+        width: 30%;
+        float: left;
+		}
+
+#itembased2 
+{height: 100%;
+        width: 30%;
+        float: right;
+		}
+
+#valuebased  {height: 100%;
+         width: 30%;
+         margin: 0 auto;}
+
+table.warehouse 
+{
+	margin: 10px 0;
+    width: 100%;
+    border-collapse: collapse;
+border: 0px solid #0;
+frame:void;}
+
+tr.top td { border-top: thin solid black; }
+tr.bottom td { border-bottom: thin solid black; }
+tr.row td:first-child { border-left: thin solid black; }
+tr.row td:last-child { border-right: thin solid black; }
+
+td.blank {
+	    padding: 1px 3px; 
+        color: #EEEEEE;
+		text-align:left;
+} 
+
+
+th.tablehead
+{
+		color: #ffffff;
+		background-color: #f0f0f0;
+		padding: 0px 0px 0px 2px ; 
+		text-align:left;
+
+}
+
+
+tr.ordered
+{
+		background-color: #F5A9A9;
+		border: 0px;
+	    padding: 1px 3px; 
+		text-align:left;
+		width: 6%;
+}
+
+td.item-SA
+{
+		background-color: #F8E0E0;
+		border: 0px;
+	    padding: 1px 3px; 
+		text-align:left;
+		width: 6%;
+}
+td.item-daytime
+{
+		border: 0px;
+		text-align:center;
+		width: 6%;
+}
+td.item-WK
+{
+		background-color: #F78181;
+		border: 0px;
+	    padding: 1px 3px; 
+		text-align:left;
+}
+td.item-TWK
+{
+         background-color: #F5A9A9;
+	    padding: 1px 3px; 
+		border: 0px;
+		text-align:left;
+}
+td.item-sportart
+{
+		border: 0px;
+		text-align:Left;
+	    padding: 1px 1px 1px 1px ; 
+		}
+td.item-sport
+{
+		border: 0px;
+		text-align:Left;
+	    padding: 1px 1px 1px 1px ; 
+
+		}
+.item-KM
+{
+		border: 0px;
+		text-align:right;
+	    padding: 1px 3px 1px 3px ; 
+		width: 3%;
+}
+.item-SPEED
+{
+		border: 0px;
+		text-align:right;
+	    padding: 1px 3px 1px 3px ; 
+		width: 3%;
+}
+.item-HR
+{
+		border: 0px;
+		text-align:right;
+	    padding: 1px 3px 1px 3px ; 
+		width: 3%;
+}
+
+.item-CLMB
+{
+		border: 0px;
+		text-align:right;
+	    padding: 1px 3px 1px 3px ; 
+		width: 3%;
+}
+.item-STD
+{
+		border: 0px;
+		text-align:right;
+	    padding: 1px 3px 1px 3px ; 
+		width: 6%;
+}
+.item-TT
+{
+       background-color: #E3E3E3;
+		border: 0px;
+		text-align:center;
+	    padding: 1px 4px 1px 4px ; 
+		width: 3%;
+
+}
+.item-TE
+{
+       background-color: #989898;
+		border: 0px;
+		text-align:center;
+	    padding: 1px 4px 1px 4px ; 
+		width: 3%;
+}
+.item-BELSTD
+{
+		border: 0px;
+		text-align:right;
+	    padding: 1px 3px 1px 3px ; 
+		width: 6%;
+}
+td.item-RECOM
+{
+		/*#F2F5A9;*/
+		border: 0px;
+	    padding: 1px 4px 1px 4px ; 
+		text-align:center;
+		width: 6%;
+
+}
+td.item-GA1
+{
+		border: 1px;
+	    padding: 1px 4px 1px 4px ; 
+		text-align:center;
+		width: 6%;
+}
+td.item-KA1
+{
+		border: 0px;
+	    padding: 1px 4px 1px 4px ; 
+		text-align:center;
+		width: 6%;
+}
+td.item-GA2
+{
+		border: 0px;
+	    padding: 1px 4px 1px 4px ; 
+		text-align:center;
+		width: 6%;
+}
+td.item-KA2
+{
+		border: 0px;
+	    padding: 1px 4px 1px 4px ; 
+		text-align:center;
+		width: 6%;
+}
+td.item-WSA
+{
+		border: 0px;
+	    padding: 1px 4px 1px 4px ; 
+		text-align:center;
+		width: 6%;
+}
+td.item-ALT
+{
+		border: 0px;
+	    padding: 1px 4px 1px 4px ; 
+		text-align:center;
+		width: 6%;
+}
+td.item-sport
+{
+        background-color: #e0e0e0;
+		border: 0px;
+		text-align:center;
+        width: 2%;
+}
+td.item-intensity
+{
+        background-color: #eeeeee;
+		border: 0px;
+		text-align:center;
+        width: 2%;
+}
+td.item-method
+{
+        background-color: #eeeeee;
+		border: 0px;
+	    padding: 1px 4px 1px 4px ; 
+        width: 20%;
+}
+td.item-location
+{
+        background-color: #eeeeee;
+		border: 0px;
+	    padding: 1px 4px 1px 4px ; 
+        width: 20%;
+}
+
+td.item-description
+{
+        background-color: #e0e0e0;
+		border: 0px;
+	    padding: 1px 4px 1px 4px ; 
+        width: 20%;
+		 
+		 
+
+}
+td.item-comment
+{
+        background-color:#eeeeee;
+		border: 0px;
+        overflow:hidden;
+	    padding: 1px 4px 1px 4px ; 
+
+}
+td.item-percent
+{
+        background-color: #eeeeee;
+		border: 0px;
+         overflow:hidden;
+        padding:0px 0px 0px 3px;
+
+}
+td.item-deeplink
+{
+        background-color: #e0ef8e;
+        width: 20%;
+ 
+}
+
+
+
+
+
+/* map related ---------------------------- */
+#googlegraphs
+.hrgraph {
+    height: 340px;
+    width: 100%;
+    margin-top: 2px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+	border:1px solid #888888; 
+}
+
+#mapcontainer { }
+
+.mapconfig {
+    height: 350px;
+ }
+.mapshow {
+    height: 700px;
+ }
+.mapstartpointconfig {
+    height: 340px;
+    width: 100%;
+    margin-top: 2px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+	border:1px solid #888888; 
+}
+
+#spinning { }
+#map {
+    height: 1200px;
+    margin-top: 3px;
+	border:1px solid #888888; }
+#spinning { }
+
+#map-canvas0 {
+        height: 400px;
+        margin: 0px;
+        padding:200px
+}
+#map-canvas1 {
+       height: 50%;
+        margin: 0px;
+        padding:200px
+}#map-canvas2 {
+       height: 50%;
+        margin: 0px;
+        padding:200px
+}#map-canvas3 {
+       height: 50%;
+        margin: 0px;
+        padding:200px
+}#map-canvas4 {
+       height: 50%;
+        margin: 0px;
+        padding:200px
+}
+
+/*---------------------------Buttons */
+.btn-group {
+	position: relative;
+	display: inline-block;
+	font-size: 10;
+	vertical-align: middle;
+	white-space: nowrap;
+	margin-left : 20px;
+	margin-bottom: 10px;
+
+	*margin-left: .30em;
+}
+

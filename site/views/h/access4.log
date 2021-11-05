@@ -1,0 +1,137 @@
+Joomla\CMS\Input\Input::__set_state(array(
+   'inputs' => 
+  array (
+    'cookie' => 
+    Joomla\CMS\Input\Cookie::__set_state(array(
+       'inputs' => 
+      array (
+      ),
+       'options' => 
+      array (
+      ),
+       'filter' => 
+      Joomla\CMS\Filter\InputFilter::__set_state(array(
+         'stripUSC' => 0,
+         'tagsArray' => 
+        array (
+        ),
+         'attrArray' => 
+        array (
+        ),
+         'tagsMethod' => 0,
+         'attrMethod' => 0,
+         'xssAuto' => 1,
+         'tagBlacklist' => 
+        array (
+          0 => 'applet',
+          1 => 'body',
+          2 => 'bgsound',
+          3 => 'base',
+          4 => 'basefont',
+          5 => 'canvas',
+          6 => 'embed',
+          7 => 'frame',
+          8 => 'frameset',
+          9 => 'head',
+          10 => 'html',
+          11 => 'id',
+          12 => 'iframe',
+          13 => 'ilayer',
+          14 => 'layer',
+          15 => 'link',
+          16 => 'meta',
+          17 => 'name',
+          18 => 'object',
+          19 => 'script',
+          20 => 'style',
+          21 => 'title',
+          22 => 'xml',
+        ),
+         'attrBlacklist' => 
+        array (
+          0 => 'action',
+          1 => 'background',
+          2 => 'codebase',
+          3 => 'dynsrc',
+          4 => 'formaction',
+          5 => 'lowsrc',
+        ),
+         'blockedChars' => 
+        array (
+          0 => '&tab;',
+          1 => '&space;',
+          2 => '&colon;',
+          3 => '&column;',
+        ),
+      )),
+       'data' => 
+      array (
+      ),
+    )),
+  ),
+   'options' => 
+  array (
+  ),
+   'filter' => 
+  Joomla\Filter\InputFilter::__set_state(array(
+     'tagsArray' => 
+    array (
+    ),
+     'attrArray' => 
+    array (
+    ),
+     'tagsMethod' => 0,
+     'attrMethod' => 0,
+     'xssAuto' => 1,
+     'tagBlacklist' => 
+    array (
+      0 => 'applet',
+      1 => 'body',
+      2 => 'bgsound',
+      3 => 'base',
+      4 => 'basefont',
+      5 => 'canvas',
+      6 => 'embed',
+      7 => 'frame',
+      8 => 'frameset',
+      9 => 'head',
+      10 => 'html',
+      11 => 'id',
+      12 => 'iframe',
+      13 => 'ilayer',
+      14 => 'layer',
+      15 => 'link',
+      16 => 'meta',
+      17 => 'name',
+      18 => 'object',
+      19 => 'script',
+      20 => 'style',
+      21 => 'title',
+      22 => 'xml',
+    ),
+     'attrBlacklist' => 
+    array (
+      0 => 'action',
+      1 => 'background',
+      2 => 'codebase',
+      3 => 'dynsrc',
+      4 => 'formaction',
+      5 => 'lowsrc',
+    ),
+     'blockedChars' => 
+    array (
+      0 => '&tab;',
+      1 => '&space;',
+      2 => '&colon;',
+      3 => '&column;',
+    ),
+  )),
+   'data' => 
+  array (
+    'option' => 'com_hiots',
+    'view' => 'h',
+    'language' => 'de-DE',
+    'Itemid' => NULL,
+    'lang' => 'de-DE',
+  ),
+))

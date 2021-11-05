@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="com_hiots_form_view_default_title" option="com_hiots_form_view_default_option">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_HIOT_SUBMIT"
+		/>
+		<message>
+			<![CDATA[com_hiots_form_view_default_desc]]>
+		</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request">
+		<field
+			name="token"
+			type="list"
+			label="COM_HIOTS_TYPE"
+			description=""
+			class="inputbox"
+			size="1"
+			required="true"
+			default="">
+			<option
+				value=""></option>
+			<option
+				value="1">COM_HIOTS_WATER</option>
+			<option
+				value="2">COM_HIOTS_MALT</option>
+			<option
+				value="3">COM_HIOTS_HOPS</option>
+			<option
+				value="4">COM_HIOTS_YEAST</option>
+			<option
+				value="5">COM_HIOTS_SPECIAL</option>
+			<option
+				value="6">COM_HIOTS_ACCESSORIES</option>
+		</field>
+		</fieldset>
+	</fields>
+</metadata>
